@@ -1,332 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Objects - CMS Open Data Guide</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
         
-        
-        
-        <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Objects - CMS Open Data Guide</title>
-        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        var pageToc = [
+          {title: "Objects", url: "#_top", children: [
+          ]},
+        ];
 
-        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
+    </script>
+    <script src="../../../js/base.js"></script> 
+</head>
 
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="../../..">CMS Open Data Guide</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
 
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../.." class="nav-link">Home</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Computing Tools <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../../tools/cernportal/" class="dropdown-item">CERN Open Data Portal</a>
-</li>
-                                    
-<li>
-    <a href="../../../tools/cmsopendata/" class="dropdown-item">CMS Open Data</a>
-</li>
-                                    
-<li>
-    <a href="../../../tools/cmstwiki/" class="dropdown-item">CMS Twiki</a>
-</li>
-                                    
-<li>
-    <a href="../../../tools/root/" class="dropdown-item">ROOT</a>
-</li>
-                                    
-<li>
-    <a href="../../../tools/cppandpython/" class="dropdown-item">C++ and Python</a>
-</li>
-                                    
-<li>
-    <a href="../../../tools/git/" class="dropdown-item">Git</a>
-</li>
-                                    
-<li>
-    <a href="../../../tools/docker/" class="dropdown-item">Docker</a>
-</li>
-                                    
-<li>
-    <a href="../../../tools/virtualmachines/" class="dropdown-item">Virtual Machines</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CMSSW <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../../cmssw/cmsswoverview/" class="dropdown-item">Overview</a>
-</li>
-                                    
-<li>
-    <a href="../../../cmssw/cmsswdatamodel/" class="dropdown-item">Data Model</a>
-</li>
-                                    
-<li>
-    <a href="../../../cmssw/cmsswanalyzers/" class="dropdown-item">Analyzers</a>
-</li>
-                                    
-<li>
-    <a href="../../../cmssw/cmsswconfigure/" class="dropdown-item">Configure</a>
-</li>
-                                    
-<li>
-    <a href="../../../cmssw/cmsswdataanalysis/" class="dropdown-item">Data Analysis</a>
-</li>
-                                    
-<li>
-    <a href="../../../cmssw/cmsswfrontier/" class="dropdown-item">Frontier</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Analysis <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Data and Simulation</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../datasim/collisiondata/" class="dropdown-item">Collision Data</a>
-</li>
-            
-<li>
-    <a href="../../datasim/eventgeneration/" class="dropdown-item">Event Generation</a>
-</li>
-            
-<li>
-    <a href="../../datasim/mcsimulations/" class="dropdown-item">MC Simulations</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Selection</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="./" class="dropdown-item active">Objects</a>
-</li>
-            
-<li>
-    <a href="../objectid/" class="dropdown-item">Object ID</a>
-</li>
-            
-<li>
-    <a href="../triggers/" class="dropdown-item">Triggers</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../../luminosity/" class="dropdown-item">Luminosity</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Backgrounds</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../backgrounds/techniques/" class="dropdown-item">Techniques</a>
-</li>
-            
-<li>
-    <a href="../../backgrounds/qcdestimation/" class="dropdown-item">QCD Estimation</a>
-</li>
-            
-<li>
-    <a href="../../interpretation/limits/" class="dropdown-item">Upper-limit Calculations</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Systematics</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../systematics/lumiuncertain/" class="dropdown-item">Luminosity Uncertainties</a>
-</li>
-            
-<li>
-    <a href="../../systematics/mcuncertain/" class="dropdown-item">MC Uncertainty</a>
-</li>
-            
-<li>
-    <a href="../../systematics/objectsuncertain/" class="dropdown-item">Object Uncertainty</a>
-</li>
-            
-<li>
-    <a href="../../systematics/pileupuncertain/" class="dropdown-item">Pileup Uncertainty</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Interpretation</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../interpretation/stats/" class="dropdown-item">Statistics</a>
-</li>
-    </ul>
-  </li>
-                                </ul>
-                            </li>
-                            <li class="navitem">
-                                <a href="../../../about/" class="nav-link">About</a>
-                            </li>
-                        </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../../datasim/mcsimulations/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../objectid/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#objects" class="nav-link">Objects</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    
+      
+    
 
-<h1 id="objects">Objects</h1>
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../objectid/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../objectid/" class="btn btn-xs btn-link">
+        Object ID
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../datasim/mcsimulations/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../datasim/mcsimulations/" class="btn btn-xs btn-link">
+        MC Simulations
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="objects">Objects</h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>This page is under construction</p>
-</div></div>
-            </div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "../../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../../js/base.js" defer></script>
-        <script src="../../../search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
 </div>
 
-    </body>
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../objectid/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../objectid/" class="btn btn-xs btn-link">
+        Object ID
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../datasim/mcsimulations/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../datasim/mcsimulations/" class="btn btn-xs btn-link">
+        MC Simulations
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
 </html>
