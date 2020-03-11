@@ -39,13 +39,14 @@ nav:
             - 'Pileup Uncertainty': analysis/systematics/pileupuncertain.md
         - 'Interpretation':
             - 'Statistics': analysis/interpretation/stats.md
+    - FAQ: faq.md
     - About: about.md
 
 
 
 # Trying out different themes
-#theme: 
-    #name: windmill
+theme: 
+    name: windmill
 #theme: 
     #name: ivory
 #theme: 
