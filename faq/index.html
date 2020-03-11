@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>About - CMS Open Data Guide</title>
+    <title>FAQ - CMS Open Data Guide</title>
     <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../css/base.css" rel="stylesheet">
@@ -32,9 +32,10 @@
       var is_top_frame = false;
         
         var pageToc = [
-          {title: "About", url: "#_top", children: [
-              {title: "Contributors", url: "#contributors" },
-              {title: "Contact", url: "#contact" },
+          {title: "FAQ", url: "#_top", children: [
+              {title: "Docker", url: "#docker" },
+              {title: "Data", url: "#data" },
+              {title: "CMSSW", url: "#cmssw" },
           ]},
         ];
 
@@ -60,11 +61,21 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
+    <div class="wm-article-nav pull-right">
+      <a href="../about/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../about/" class="btn btn-xs btn-link">
+        About
+      </a>
+    </div>
+    
     <div class="wm-article-nav">
-      <a href="../faq/" class="btn btn-xs btn-default pull-left">
+      <a href="../analysis/interpretation/stats/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../faq/" class="btn btn-xs btn-link">
-        FAQ
+        Previous</a><a href="../analysis/interpretation/stats/" class="btn btn-xs btn-link">
+        Statistics
       </a>
     </div>
     
@@ -72,10 +83,21 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h1 id="about">About</h1>
-<p>This guide points you to places</p>
-<h2 id="contributors">Contributors</h2>
-<h2 id="contact">Contact</h2>
+    <h1 id="faq">FAQ</h1>
+<p>Frequently Asked Questions and other problems and issues
+that have come up. </p>
+<p><strong><em>Possible subsections below</em></strong></p>
+<h2 id="docker">Docker</h2>
+<h4 id="docker-downloads-container-but-never-launches-environment"><strong>Docker downloads container but never launches environment</strong></h4>
+<p>This is an issue with newer OSs on your local laptop/desktop running older OSs in the container. </p>
+<p>For example, suppose you are following the <a href="http://opendata.cern.ch/docs/cms-guide-docker">Running CMS analysis code using Docker</a>
+tutorial. If you run</p>
+<pre><code class="bash">docker run --name opendata -it cmsopendata/cmssw_5_3_32 /bin/bash
+</code></pre>
+
+<p>and the container downloads but you don't find yourself in the <code>CMSSW_5_3_32</code> environment, then...</p>
+<h2 id="data">Data</h2>
+<h2 id="cmssw">CMSSW</h2>
 
   <br>
     
@@ -87,11 +109,21 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
+    <div class="wm-article-nav pull-right">
+      <a href="../about/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../about/" class="btn btn-xs btn-link">
+        About
+      </a>
+    </div>
+    
     <div class="wm-article-nav">
-      <a href="../faq/" class="btn btn-xs btn-default pull-left">
+      <a href="../analysis/interpretation/stats/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../faq/" class="btn btn-xs btn-link">
-        FAQ
+        Previous</a><a href="../analysis/interpretation/stats/" class="btn btn-xs btn-link">
+        Statistics
       </a>
     </div>
     
