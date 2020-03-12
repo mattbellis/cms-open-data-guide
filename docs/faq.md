@@ -5,6 +5,12 @@ that have come up.
 
 ***Possible subsections below***
 
+## High-level questions
+
+#### **Why would I choose VirtualBox over docker? Why would I choose docker over VirtualBox?**
+
+Great question! Anyone?
+
 ## Docker 
 
 #### **Docker downloads container but never launches environment** 
